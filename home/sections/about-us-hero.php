@@ -20,7 +20,7 @@
                     <div class="about-inner-wrap">
                         <div class="section-title mb-0">
                             <h4 class="subtitle">ABOUT US</h4>
-                            <h2 class="title">WELCOME VENOXPRESS</h2>
+                            <h2 style="text-transform: capitalize;" class="title">WELCOME <?php echo $domain ?></h2>
                             <p class="content left-line">Discover our commitment to reliable and efficient courier services.</p>
                             <div class="row">
                                 <div class="col-xl-6 col-lg-12 col-md-6">

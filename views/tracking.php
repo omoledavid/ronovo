@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <title><?php echo $lang['left127'] ?> | <?php echo $core->site_name; ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Courier VENOXPRESS-Integral Web System">
+    <meta name="keywords" content="<?php echo $core->site_name ?>">
     <meta name="author" content="Jaomweb">
     <meta name="description" content="">
     <!-- favicon -->
@@ -102,14 +102,7 @@
                                         <div class="form-group position-relative">
 
                                             <div class="col-md-12">
-                                                <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="radio" name="trackingType" id="trackingType" value="1" checked>
-                                                    <label class="form-check-label" for="trackingType"><?php echo $lang['message_title_tracking1'] ?></label>
-                                                </div>
-                                                <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="radio" name="trackingType" id="trackingType" value="2">
-                                                    <label class="form-check-label" for="trackingType"><?php echo $lang['message_title_tracking2'] ?></label>
-                                                </div>
+                                                <p>Enter Trading Number</p>
                                             </div>
 
                                         </div>
@@ -119,7 +112,7 @@
 
                                             <div class="form-icon position-relative">
                                                 <i class="mdi mdi-cube-send ml-3 icons"></i>
-                                                <textarea name="order_track" placeholder="<?php echo $lang['left130'] ?>" id="order_track" rows="4" class="form-control ps-5" required></textarea>
+                                                <input name="order_track" placeholder="Track shipment" id="order_track" rows="4" class="form-control ps-5" required>
                                             </div>
                                         </div>
                                     </div>

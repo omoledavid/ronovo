@@ -48,7 +48,7 @@
                         <img src="home/assets/img/logo-white.png" alt="img">
                     </div>
                     <div class="details">
-                        <p>Venoxpress: Your Trusted Partner for Swift, Secure, and Seamless Courier Solutions. Delivering Excellence Every Time.</p>
+                        <p><?php echo $domain ?>: Your Trusted Partner for Swift, Secure, and Seamless Courier Solutions. Delivering Excellence Every Time.</p>
                     </div>
                 </div>
             </div>

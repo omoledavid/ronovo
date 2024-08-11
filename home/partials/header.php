@@ -36,7 +36,7 @@
     <header class="navbar-area">
         <div class="navbar-top">
             <div class="logo d-none d-lg-block">
-                <a class="main-logo" href="index.php"><img src="home/assets/img/logo.png" alt="img"></a>
+                <a class="main-logo" href="index.php"><img style="width: 41.25rem;" src="home/assets/img/logo.png" alt="img"></a>
             </div>
             <div class="nav-phone-wrap">
                 <i class="fas fa-phone-alt"></i>

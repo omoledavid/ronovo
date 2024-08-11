@@ -1,5 +1,5 @@
 <?php 
-$domain = 'VenoXpress';
+$domain = 'Renovologistics';
 $phone_no = 125558888;
-$email = 'support@venoxpress.com';
+$email = 'support@renovologistics.com';
 $address = '2500 Southbranch Blvd A, United States';

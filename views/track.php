@@ -1,23 +1,5 @@
 <?php
-// *************************************************************************
-// *                                                                       *
-// * VenoXpress - Integrated Web Shipping System                         *
-// * Copyright (c) JAOMWEB. All Rights Reserved                            *
-// *                                                                       *
-// *************************************************************************
-// *                                                                       *
-// * Email: support@jaom.info                                              *
-// * Website: http://www.jaom.info                                         *
-// *                                                                       *
-// *************************************************************************
-// *                                                                       *
-// * This software is furnished under a license and may be used and copied *
-// * only  in  accordance  with  the  terms  of such  license and with the *
-// * inclusion of the above copyright notice.                              *
-// * If you Purchased from Codecanyon, Please read the full License from   *
-// * here- http://codecanyon.net/licenses/standard                         *
-// *                                                                       *
-// *************************************************************************
+
 
 
 
@@ -130,7 +112,7 @@ if ($track != null) {
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="keywords" content="Courier VENOXPRESS-Integral Web System">
+	<meta name="keywords" content="<?php echo $core->site_name ?>">
 	<meta name="author" content="Jaomweb">
 	<meta name="description" content="">
 	<!-- For IE -->

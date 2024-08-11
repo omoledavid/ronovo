@@ -37,7 +37,7 @@
 					<li class="p-15 m-t-10">
 						<a href="courier_add.php" class="btn btn-block create-btn text-white no-block d-flex align-items-center">
 							<i class="ti-package"></i>
-							<span class="hide-menu m-l-5"> <?php echo $lang['left-menu-sidebar-1'] ?> </span>
+							<span class="hide-menu m-l-5"> Create Shipment</span>
 						</a>
 					</li>
 
@@ -46,329 +46,66 @@
 					<li class="sidebar-item">
 						<a class="sidebar-link waves-effect waves-dark" href="index.php" aria-expanded="false">
 							<i class="mdi mdi-view-dashboard"></i>
-							<span class="hide-menu"> <?php echo $lang['left-menu-sidebar-2'] ?></span>
+							<span class="hide-menu">Dashboard</span>
 						</a>
 					</li>
-
-					<li class="nav-small-cap">
-						<i class="mdi mdi-dots-horizontal"></i>
-						<span class="hide-menu"><?php echo $lang['left-menu-sidebar-3'] ?></span>
-					</li>
-
 
 					<li class="sidebar-item">
 						<a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
 							<i class="mdi mdi-widgets"></i>
-							<span class="hide-menu"><?php echo $lang['left-menu-sidebar-4'] ?></span>
-						</a>
-						<ul aria-expanded="false" class="collapse  first-level">
-							<!-- Module online shopping-->
-							<li class="sidebar-item">
-								<a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
-									<i class="mdi mdi-cart-outline"></i>
-									<span class="hide-menu"><?php echo $lang['left-menu-sidebar-5'] ?></span>
-								</a>
-
-								<ul aria-expanded="false" class="collapse  first-level">
-
-									<li class="sidebar-item">
-										<a href="dashboard_admin_packages_customers.php" class="sidebar-link">
-											<i class="mdi mdi-view-dashboard"></i>
-											<span class="hide-menu"> <?php echo $lang['left-menu-sidebar-6'] ?></span>
-										</a>
-									</li>
-
-									<li class="sidebar-item">
-										<a class="sidebar-link waves-effect waves-dark" href="prealert_list.php" aria-expanded="false">
-											<i class="ti ti-check" style="color:#975EF7"></i>
-											<span class="hide-menu"> <?php echo $lang['left-menu-sidebar-7'] ?> </span>
-										</a>
-									</li>
-
-									<li class="sidebar-item">
-										<a href="customer_packages_add.php" class="sidebar-link">
-											<i class="ti ti-check" style="color:#975EF7"></i>
-											<span class="hide-menu"> <?php echo $lang['left-menu-sidebar-8'] ?> </span>
-										</a>
-									</li>
-
-									<li class="sidebar-item">
-										<a href="customer_packages_multiple.php" class="sidebar-link">
-											<i class="ti ti-check" style="color:#975EF7"></i>
-											<span class="hide-menu"> <?php echo $lang['left-menu-sidebar-9'] ?> </span>
-										</a>
-									</li>
-
-									<li class="sidebar-item">
-										<a class="sidebar-link waves-effect waves-dark" href="customer_packages_list.php" aria-expanded="false">
-											<i class="ti ti-check" style="color:#975EF7"></i>
-											<span class="hide-menu"> <?php echo $lang['left-menu-sidebar-11'] ?> </span>
-										</a>
-									</li>
-
-									<li class="sidebar-item">
-										<a class="sidebar-link waves-effect waves-dark" href="payments_gateways_list.php" aria-expanded="false">
-											<i class="ti ti-check" style="color:#975EF7"></i>
-											<span class="hide-menu"><?php echo $lang['left-menu-sidebar-12'] ?> </span>
-										</a>
-									</li>
-
-								</ul>
-							</li>
-
-
-							<!-- Module shipment-->
-							<li class="sidebar-item">
-								<a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
-									<i class="mdi mdi-package-variant"></i>
-									<span class="hide-menu"> <?php echo $lang['left-menu-sidebar-13'] ?></span>
-								</a>
-								<ul aria-expanded="false" class="collapse  first-level">
-
-									<li class="sidebar-item">
-										<a href="dashboard_admin_shipments.php" class="sidebar-link">
-											<i class="ti ti-check" style="color:#975EF7"></i>
-											<span class="hide-menu"> <?php echo $lang['left-menu-sidebar-14'] ?></span>
-										</a>
-									</li>
-
-									<li class="sidebar-item">
-										<a href="courier_add.php" class="sidebar-link">
-											<i class="ti ti-check" style="color:#975EF7"></i>
-											<span class="hide-menu"> <?php echo $lang['left-menu-sidebar-15'] ?> </span>
-										</a>
-									</li>
-
-									<li class="sidebar-item">
-										<a href="courier_add_multiple.php" class="sidebar-link">
-											<i class="ti ti-check" style="color:#975EF7"></i>
-											<span class="hide-menu"> <?php echo $lang['left-menu-sidebar-17'] ?> </span>
-										</a>
-									</li>
-
-									<li class="sidebar-item">
-										<a href="courier_list.php" class="sidebar-link">
-											<i class="ti ti-check" style="color:#975EF7"></i>
-											<span class="hide-menu"> <?php echo $lang['left-menu-sidebar-16'] ?> </span>
-										</a>
-									</li>
-
-									<li class="sidebar-item">
-										<a class="sidebar-link waves-effect waves-dark" href="payments_gateways_courier_list.php" aria-expanded="false">
-											<i class="ti ti-check" style="color:#975EF7"></i>
-											<span class="hide-menu"><?php echo $lang['left-menu-sidebar-12'] ?> </span>
-										</a>
-									</li>
-
-								</ul>
-							</li>
-
-							<!-- Module pickup-->
-							<li class="sidebar-item">
-								<a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
-									<i class="mdi mdi-run-fast"></i>
-									<span class="hide-menu"> <?php echo $lang['left-menu-sidebar-18'] ?></span>
-								</a>
-								<ul aria-expanded="false" class="collapse  first-level">
-
-									<li class="sidebar-item">
-										<a href="dashboard_admin_pickup.php" class="sidebar-link">
-											<i class="mdi mdi-view-dashboard"></i>
-											<span class="hide-menu"> <?php echo $lang['left-menu-sidebar-19'] ?> </span>
-										</a>
-									</li>
-
-									<?php if ($userData->userlevel == 9 || $userData->userlevel == 3) { ?>
-
-										<li class="sidebar-item">
-											<a href="pickup_add_full.php" class="sidebar-link">
-												<i class="ti ti-check" style="color:#975EF7"></i>
-												<span class="hide-menu"> <?php echo $lang['left-menu-sidebar-20'] ?> </span>
-											</a>
-										</li>
-									<?php
-
-									} else { ?>
-
-										<li class="sidebar-item">
-											<a href="pickup_add.php" class="sidebar-link">
-												<i class="ti ti-check" style="color:#975EF7"></i>
-												<span class="hide-menu"> <?php echo $lang['left-menu-sidebar-20'] ?> </span>
-											</a>
-										</li>
-
-									<?php
-									}
-									?>
-
-									<li class="sidebar-item">
-										<a href="pickup_list.php" class="sidebar-link">
-											<i class="ti ti-check" style="color:#975EF7"></i>
-											<span class="hide-menu"> <?php echo $lang['left-menu-sidebar-21'] ?> </span>
-										</a>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</li>
-
-
-
-
-
-
-
-
-
-
-
-					<!-- CONSOLIDATE -->
-					<li class="sidebar-item">
-						<a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
-							<i class="mdi mdi-widgets"></i>
-							<span class="hide-menu"><?php echo $lang['left-menu-sidebar-22'] ?></span>
+							<span class="hide-menu">All Shipments</span>
 						</a>
 						<ul aria-expanded="false" class="collapse  first-level">
 
-							<!-- Module consolidate-->
 							<li class="sidebar-item">
-								<a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
-									<i class="fas fas fa-boxes"></i>
-									<span class="hide-menu"> <?php echo $lang['left-menu-sidebar-2233333310'] ?></span>
+								<a href="dashboard_admin_shipments.php" class="sidebar-link">
+									<i class="ti ti-check" style="color:#975EF7"></i>
+									<span class="hide-menu"> <?php echo $lang['left-menu-sidebar-14'] ?></span>
 								</a>
-								<ul aria-expanded="false" class="collapse  first-level">
-									<li class="sidebar-item">
-										<a href="dashboard_admin_consolidated.php" class="sidebar-link">
-											<i class="mdi mdi-view-dashboard"></i>
-											<span class="hide-menu"> <?php echo $lang['left-menu-sidebar-23'] ?></span>
-										</a>
-									</li>
-
-									<li class="sidebar-item">
-										<a href="consolidate_list.php" class="sidebar-link">
-											<i class="ti ti-check" style="color:#975EF7"></i>
-											<span class="hide-menu"> <?php echo $lang['left-menu-sidebar-24'] ?> </span>
-										</a>
-									</li>
-
-									<li class="sidebar-item">
-										<a href="consolidate_add.php" class="sidebar-link">
-											<i class="ti ti-check" style="color:#975EF7"></i>
-											<span class="hide-menu"> <?php echo $lang['left-menu-sidebar-25'] ?> </span>
-										</a>
-									</li>
-
-									<li class="sidebar-item">
-										<a class="sidebar-link waves-effect waves-dark" href="payments_gateways_consolidate_list.php" aria-expanded="false">
-											<i class="ti ti-check" style="color:#975EF7"></i>
-											<span class="hide-menu"><?php echo $lang['left-menu-sidebar-12'] ?> </span>
-										</a>
-									</li>
-								</ul>
 							</li>
 
-
-							<!-- Module consolidate-->
 							<li class="sidebar-item">
-								<a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
-									<i class="fas fas fa-boxes"></i>
-									<span class="hide-menu"> <?php echo $lang['left-menu-sidebar-2233333312'] ?></span>
+								<a href="courier_add.php" class="sidebar-link">
+									<i class="ti ti-check" style="color:#975EF7"></i>
+									<span class="hide-menu"> <?php echo $lang['left-menu-sidebar-15'] ?> </span>
 								</a>
-								<ul aria-expanded="false" class="collapse  first-level">
-									<li class="sidebar-item">
-										<a href="dashboard_admin_package_consolidated.php" class="sidebar-link">
-											<i class="mdi mdi-view-dashboard"></i>
-											<span class="hide-menu"> <?php echo $lang['left-menu-sidebar-23'] ?></span>
-										</a>
-									</li>
-
-									<li class="sidebar-item">
-										<a href="consolidate_package_list.php" class="sidebar-link">
-											<i class="ti ti-check" style="color:#975EF7"></i>
-											<span class="hide-menu"> <?php echo $lang['left-menu-sidebar-24'] ?> </span>
-										</a>
-									</li>
-
-									<li class="sidebar-item">
-										<a href="consolidate_package_add.php" class="sidebar-link">
-											<i class="ti ti-check" style="color:#975EF7"></i>
-											<span class="hide-menu"> <?php echo $lang['left-menu-sidebar-25'] ?> </span>
-										</a>
-									</li>
-
-									<li class="sidebar-item">
-										<a class="sidebar-link waves-effect waves-dark" href="payments_gateways_package_consolidate_list.php" aria-expanded="false">
-											<i class="ti ti-check" style="color:#975EF7"></i>
-											<span class="hide-menu"><?php echo $lang['left-menu-sidebar-12'] ?> </span>
-										</a>
-									</li>
-								</ul>
 							</li>
+
+							<li class="sidebar-item">
+								<a href="courier_add_multiple.php" class="sidebar-link">
+									<i class="ti ti-check" style="color:#975EF7"></i>
+									<span class="hide-menu"> <?php echo $lang['left-menu-sidebar-17'] ?> </span>
+								</a>
+							</li>
+
+							<li class="sidebar-item">
+								<a href="courier_list.php" class="sidebar-link">
+									<i class="ti ti-check" style="color:#975EF7"></i>
+									<span class="hide-menu"> <?php echo $lang['left-menu-sidebar-16'] ?> </span>
+								</a>
+							</li>
+
+							<li class="sidebar-item">
+								<a class="sidebar-link waves-effect waves-dark" href="payments_gateways_courier_list.php" aria-expanded="false">
+									<i class="ti ti-check" style="color:#975EF7"></i>
+									<span class="hide-menu"><?php echo $lang['left-menu-sidebar-12'] ?> </span>
+								</a>
+							</li>
+
 						</ul>
-					</li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-					<li class="sidebar-item">
-						<a class="sidebar-link waves-effect waves-dark" href="reports.php" aria-expanded="false">
-							<i class="mdi mdi-book-multiple"></i>
-							<span class="hide-menu"> <?php echo $lang['left-menu-sidebar-26'] ?></span>
-						</a>
 					</li>
 
 					<li class="sidebar-item">
 						<a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
 							<i class="mdi mdi-wallet"></i>
-							<span class="hide-menu"> <?php echo $lang['left-menu-sidebar-27'] ?></span>
+							<span class="hide-menu"> Transactions</span>
 						</a>
 						<ul aria-expanded="false" class="collapse  first-level">
 
 							<li class="sidebar-item">
 								<a href="dashboard_admin_account.php" class="sidebar-link">
 									<i class="mdi mdi-view-dashboard"></i>
-									<span class="hide-menu"> <?php echo $lang['left-menu-sidebar-28'] ?></span>
+									<span class="hide-menu">users</span>
 								</a>
 							</li>
 
@@ -392,7 +129,7 @@
 					<li class="sidebar-item">
 						<a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
 							<i class="mdi mdi-account-multiple-plus"></i>
-							<span class="hide-menu"> <?php echo $lang['left-menu-sidebar-30'] ?></span>
+							<span class="hide-menu"> All Users</span>
 						</a>
 						<ul aria-expanded="false" class="collapse  first-level">
 							<li class="sidebar-item">
@@ -414,7 +151,7 @@
 					<li class="sidebar-item">
 						<a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
 							<i class="fas fa-users"></i>
-							<span class="hide-menu"> <?php echo $lang['left-menu-sidebar-33'] ?></span>
+							<span class="hide-menu"> Account Profile</span>
 						</a>
 						<ul aria-expanded="false" class="collapse  first-level">
 							<li class="sidebar-item">
@@ -438,11 +175,6 @@
 								</a>
 							</li>
 						</ul>
-					</li>
-
-					<li class="nav-small-cap">
-						<i class="mdi mdi-dots-horizontal"></i>
-						<span class="hide-menu"><?php echo $lang['left-menu-sidebar-37'] ?></span>
 					</li>
 
 					<li class="sidebar-item">

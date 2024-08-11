@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <title><?php echo $lang['langs_010112'] ?> | <?php echo $core->site_name; ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Courier VENOXPRESS-Integral Web System">
+    <meta name="keywords" content="<?php echo $core->site_name ?>">
     <meta name="author" content="Jaomweb">
     <meta name="description" content="">
     <!-- favicon -->

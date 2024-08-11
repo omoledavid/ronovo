@@ -1,23 +1,5 @@
 <?php
-// *************************************************************************
-// *                                                                       *
-// * VenoXpress - Integrated Web Shipping System                         *
-// * Copyright (c) JAOMWEB. All Rights Reserved                            *
-// *                                                                       *
-// *************************************************************************
-// *                                                                       *
-// * Email: support@jaom.info                                              *
-// * Website: http://www.jaom.info                                         *
-// *                                                                       *
-// *************************************************************************
-// *                                                                       *
-// * This software is furnished under a license and may be used and copied *
-// * only  in  accordance  with  the  terms  of such  license and with the *
-// * inclusion of the above copyright notice.                              *
-// * If you Purchased from Codecanyon, Please read the full License from   *
-// * here- http://codecanyon.net/licenses/standard                         *
-// *                                                                       *
-// *************************************************************************
+
 
 
 $userData = $user->cdp_getUserData();
@@ -33,7 +15,7 @@ $db = new Conexion;
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="Courier VENOXPRESS-Integral Web System" />
+    <meta name="keywords" content="<?= $core->site_name?>" />
     <meta name="author" content="Jaomweb">
     <title><?php echo $lang['left-menu-sidebar-2'] ?> | <?php echo $core->site_name ?></title>
     <!-- Favicon icon -->
@@ -98,7 +80,7 @@ $db = new Conexion;
                                     <!-- column -->
                                     <div class="col-sm-12 col-md-6 col-lg-8">
                                         <div class="card-body border-bottom">
-                                            <h5 class="card-title"><?php echo $lang['left-menu-sidebar-2'] ?></h5>
+                                            <h5 class="card-title">Control Panel</h5>
                                         </div>
 
                                         <div class="row">
@@ -112,7 +94,7 @@ $db = new Conexion;
                                                             </span>
                                                         </a>
                                                     </div>
-                                                    <div><span><?php echo $lang['dash-general-1'] ?></span>
+                                                    <div><span>shipments</span>
                                                         <h3 class="font-medium m-b-0">
                                                             <?php
 
@@ -129,52 +111,11 @@ $db = new Conexion;
                                                 </div>
                                             </div>
                                             <!-- col -->
-                                            <div class="col-lg-6 col-md-6">
-                                                <div class="d-flex align-items-center">
-                                                    <div class="m-r-10"><a href="pickup_list.php"><span class="text-cyan display-6"><i class="mdi mdi-star-circlemdi mdi-clock-fast"></i></span> </a></div>
-                                                    <div><span><?php echo $lang['dash-general-2'] ?></span>
-                                                        <h3 class="font-medium m-b-0">
-                                                            <?php
-
-                                                            $db->cdp_query('SELECT COUNT(*) as total FROM cdb_add_order WHERE is_pickup=1 and status_courier=14');
-
-                                                            $db->cdp_execute();
-
-                                                            $count = $db->cdp_registro();
-
-                                                            echo $count->total;
-                                                            ?>
-
-                                                        </h3>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- col -->
-                                            <div class="col-lg-6 col-md-6">
-                                                <div class="d-flex align-items-center">
-                                                    <div class="m-r-10"><a href="consolidate_list.php"><span class="text-danger display-6"><i class="mdi mdi-gift"></i></span></a></div>
-                                                    <div><span><?php echo $lang['dash-general-3'] ?></span>
-                                                        <h3 class="font-medium m-b-0">
-                                                            <?php
-
-                                                            $db->cdp_query('SELECT COUNT(*) as total FROM cdb_consolidate');
-
-                                                            $db->cdp_execute();
-
-                                                            $count = $db->cdp_registro();
-
-                                                            echo $count->total;
-                                                            ?>
-                                                        </h3>
-                                                    </div>
-                                                </div>
-                                            </div>
-
                                             <!-- col -->
                                             <div class="col-lg-6 col-md-6">
                                                 <div class="d-flex align-items-center">
                                                     <div class="m-r-10"><a href="accounts_receivable.php"><span class="text-primary display-6"><i class="mdi mdi-package-down"></i></span></a></div>
-                                                    <div><span><?php echo $lang['dash-general-4'] ?></span>
+                                                    <div><span> Account Receivable</span>
                                                         <h3 class="font-medium m-b-0">
                                                             <?php
 
@@ -190,49 +131,6 @@ $db = new Conexion;
                                                     </div>
                                                 </div>
                                             </div>
-
-                                            <!-- col -->
-                                            <div class="col-lg-6 col-md-6">
-                                                <div class="d-flex align-items-center">
-                                                    <div class="m-r-10"><a href="prealert_list.php"><span class="text-warning display-6"><i class="mdi mdi-clock-alert"></i></span></a></div>
-                                                    <div><span><?php echo $lang['dash-general-5'] ?></span>
-                                                        <h3 class="font-medium m-b-0">
-                                                            <?php
-
-                                                            $db->cdp_query('SELECT COUNT(*) as total FROM cdb_pre_alert where is_package=0');
-
-                                                            $db->cdp_execute();
-
-                                                            $count = $db->cdp_registro();
-
-                                                            echo $count->total;
-                                                            ?>
-                                                        </h3>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <!-- col -->
-                                            <div class="col-lg-6 col-md-6">
-                                                <div class="d-flex align-items-center">
-                                                    <div class="m-r-10"><a href="customer_packages_list.php"><span class="text-success display-6"><i class="fas fa-cube"></i></span></a></div>
-                                                    <div><span><?php echo $lang['dash-general-661'] ?></span>
-                                                        <h3 class="font-medium m-b-0">
-                                                            <?php
-
-                                                            $db->cdp_query('SELECT COUNT(*) as total FROM cdb_customers_packages');
-
-                                                            $db->cdp_execute();
-
-                                                            $count = $db->cdp_registro();
-
-                                                            echo $count->total;
-                                                            ?>
-                                                        </h3>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- col -->
                                         </div>
 
                                         <div class="row">
@@ -243,7 +141,7 @@ $db = new Conexion;
                                                 </div>
                                                 <div class="d-flex align-items-center">
                                                     <div class="m-r-10"><span class="text-primary display-6"><i class="mdi mdi-basket"></i></span></div>
-                                                    <div><span class="text-muted"><?php echo $lang['dash-general-7'] ?></span>
+                                                    <div><span class="text-muted">Total registered packages</span>
                                                         <h4 class="font-medium m-b-0"><?php echo $core->currency; ?>
 
                                                             <?php
@@ -268,7 +166,7 @@ $db = new Conexion;
                                                 </div>
                                                 <div class="d-flex align-items-center">
                                                     <div class="m-r-10"><span class="text-orange display-6"><i class="mdi mdi-wallet"></i></span></div>
-                                                    <div><span class="text-muted"><?php echo $lang['dash-general-8'] ?></span>
+                                                    <div><span class="text-muted">Total accounts receivable</span>
                                                         <h4 class="font-medium m-b-0"><?php echo $core->currency; ?>
 
                                                             <?php
@@ -296,7 +194,7 @@ $db = new Conexion;
                                             <li class="m-t-30">
                                                 <div class="d-flex align-items-center">
                                                     <div>
-                                                        <span class="text-muted"><?php echo $lang['dash-general-10'] ?></span>
+                                                        <span class="text-muted">Total Shipments</span>
                                                         <h4 class="m-b-0">
                                                             <span class="font-16">
                                                                 <?php echo $core->currency; ?>
@@ -321,62 +219,6 @@ $db = new Conexion;
                                                     <div class="progress-bar bg-warning" role="progressbar" style="width: <?php echo cdb_money_format_bar($sum1) / 100; ?>%" aria-valuenow="" aria-valuemin="0" aria-valuemax="100"></div>
                                                 </div>
                                             </li>
-                                            <li class="m-t-30">
-                                                <div class="d-flex align-items-center">
-                                                    <div>
-                                                        <span class="text-muted"><?php echo $lang['dash-general-11'] ?></span>
-                                                        <h4 class="m-b-0">
-                                                            <span class="font-16">
-                                                                <?php echo $core->currency; ?>
-                                                                <?php
-
-                                                                $db->cdp_query('SELECT IFNULL(SUM(total_order),0) as total FROM cdb_add_order where status_courier!=21 and is_pickup=1');
-
-                                                                $db->cdp_execute();
-
-                                                                $row = $db->cdp_registro();
-
-                                                                $sum2 = $row->total;
-
-                                                                echo cdb_money_format($sum2);
-
-                                                                ?>
-                                                            </span>
-                                                        </h4>
-                                                    </div>
-                                                </div>
-                                                <div class="progress m-t-10">
-                                                    <div class="progress-bar bg-info" role="progressbar" style="width: <?php echo cdb_money_format_bar($sum2) / 100; ?>%" aria-valuenow="47" aria-valuemin="0" aria-valuemax="100"></div>
-                                                </div>
-                                            </li>
-                                            <li class="m-t-30 m-b-40">
-                                                <div class="d-flex align-items-center">
-                                                    <div>
-                                                        <span class="text-muted"><?php echo $lang['dash-general-12'] ?></span>
-                                                        <h4 class="m-b-0">
-                                                            <span class="font-16">
-                                                                <?php echo $core->currency; ?>
-                                                                <?php
-
-                                                                $db->cdp_query('SELECT IFNULL(SUM(total_order),0) as total FROM cdb_consolidate WHERE status_courier!=21');
-
-                                                                $db->cdp_execute();
-
-                                                                $row = $db->cdp_registro();
-
-                                                                $sum3 = $row->total;
-
-                                                                echo cdb_money_format($sum3);
-
-                                                                ?>
-                                                            </span>
-                                                        </h4>
-                                                    </div>
-                                                </div>
-                                                <div class="progress m-t-10">
-                                                    <div class="progress-bar bg-red" role="progressbar" style="width: <?php echo cdb_money_format_bar($sum3) / 100; ?>%" aria-valuenow="47" aria-valuemin="0" aria-valuemax="100"></div>
-                                                </div>
-                                            </li>
                                         </ul>
                                     </div>
                                 </div>
@@ -389,7 +231,7 @@ $db = new Conexion;
                         <div class="card">
                             <div class="card-body">
                                 <div class="card-body border-bottom">
-                                    <h5 class="card-title"><?php echo $lang['dash-general-13'] ?></h5>
+                                    <h5 class="card-title">Users</h5>
                                 </div>
 
                                 <div class="col-md-6 col-sm-12 col-lg-6 m-t-30 m-b-20">
@@ -407,7 +249,7 @@ $db = new Conexion;
                                             <?php } ?>
                                         </div>
                                         <div>
-                                            <span class="text-muted"><?php echo $lang['dash-general-14'] ?></span>
+                                            <span class="text-muted">Super Admin</span>
                                             <h3 class="font-medium m-b-0">
                                                 <?php
 
@@ -505,31 +347,7 @@ $db = new Conexion;
                                 <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                                     <li class="nav-item">
                                         <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-shipment" role="tab" aria-controls="pills-shipment" aria-selected="true">
-                                            <?php echo $lang['dash-general-19'] ?>
-                                        </a>
-                                    </li>
-
-                                    <li class="nav-item">
-                                        <a class="nav-link" id="pills-profile-tab" href="pickup_list.php">
-                                            <?php echo $lang['dash-general-20'] ?>
-                                        </a>
-                                    </li>
-
-                                    <li class="nav-item">
-                                        <a class="nav-link" id="pills-profile-tab" href="consolidate_list.php">
-                                            <?php echo $lang['dash-general-21'] ?>
-                                        </a>
-                                    </li>
-
-                                    <li class="nav-item">
-                                        <a class="nav-link" id="pills-profile-tab" href="prealert_list.php">
-                                            <?php echo $lang['dash-general-22'] ?>
-                                        </a>
-                                    </li>
-
-                                    <li class="nav-item">
-                                        <a class="nav-link" id="pills-profile-tab" href="customer_packages_list.php">
-                                            <?php echo $lang['dash-general-23'] ?>
+                                            List of Shipments
                                         </a>
                                     </li>
                                 </ul>
