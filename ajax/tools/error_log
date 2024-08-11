@@ -1,0 +1,2 @@
+[10-Jan-2024 06:08:18 America/Bogota] PHP Warning:  Use of undefined constant CDP_APP_MODE_DEMO - assumed 'CDP_APP_MODE_DEMO' (this will throw an Error in a future version of PHP) in /home/venoxpre/public_html/ajax/tools/config_system_ajax.php on line 119
+[10-Jan-2024 11:09:37 UTC] PHP Warning:  Use of undefined constant CDP_APP_MODE_DEMO - assumed 'CDP_APP_MODE_DEMO' (this will throw an Error in a future version of PHP) in /home/venoxpre/public_html/ajax/tools/config_general_ajax.php on line 53
