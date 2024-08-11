@@ -10,7 +10,7 @@
 					<!-- Logo text -->
 					<span class="logo-text">
 						<!-- dark Logo text -->
-						<?php echo ($core->logo) ? '<img src="assets/' . $core->logo . '" alt="' . $core->site_name . '" width="' . $core->thumb_w . '" height="' . $core->thumb_h . '"/>' : $core->site_name; ?>
+						<?php echo ($core->logo) ? '<img src="assets/' . $core->logo . '" alt="' . $core->site_name . '" width="' . $core->thumb_w . '" height="auto"/>' : $core->site_name; ?>
 					</span>
 				</a>
 
